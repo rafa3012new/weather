@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="dojoweather.css" type="text/css">
+    <script src="dojoweather.js"></script>
+</head>
+<body>
+    <!-- Realizado por Rafael Fernandez 2022 -->
+    <!-- barra -->
+    <div class="weatherbar">
+        <!-- titulo -->
+        <div class="weatherbar_sec1">
+            <h1>Dojo Weather</h1>
+        </div>
+        <!-- Ciudades -->
+        <div class="weatherbar_sec2">
+            <ul class="citieslist">
+                <li onclick="mensajeciudad(this)">Burbank</li>
+                <li onclick="mensajeciudad(this)">Chicago</li>
+                <li onclick="mensajeciudad(this)">Dallas</li>
+            </ul>
+            <h1 id="addoptions">+</h1>
+        </div>
+    </div>
+
+     <!-- Cuerpo de la pagina -->
+     <div class="titulo">
+       <div class="sec1"> 
+         <h1>San Jose</h1>
+       </div>
+       <div class="sec2">
+       <p>Show temperature</p>
+         <select name="temp" id="inputtemp" onchange="cambiarlista(this)">
+           <option value="celsius">C</option>
+           <option value="fahrenheit">F</option>
+         </select>
+       </div>
+     </div>
+     
+     <!-- Carrusel de dias -->
+     <div class="carrousel">
+
+       <div class="weathercard">
+            <h2 class="weathercardtitle">Today</h2>
+            <div class="weatherimgcontainer">
+              <img class="weatherimg" src="icons/some_rain.png" alt="imagen no encontrada">
+            </div>
+            <p>some rain</p>
+            <div class="temp_range">
+              <p class="maxtemp">21 C</p>
+              <p class="mintemp">17 C</p>
+            </div>
+        </div>
+
+        <div class="weathercard">
+          <h2 class="weathercardtitle">Today</h2>
+          <div class="weatherimgcontainer">
+            <img class="weatherimg" src="icons/some_sun.png" alt="imagen no encontrada">
+          </div>
+          <p>some rain</p>
+          <div class="temp_range">
+            <p class="maxtemp">24 C</p>
+            <p class="mintemp">20 C</p>
+          </div>
+      </div>
+
+
+      <div class="weathercard">
+        <h2 class="weathercardtitle">Today</h2>
+        <div class="weatherimgcontainer">
+          <img class="weatherimg" src="icons/some_clouds.png" alt="imagen no encontrada">
+        </div>
+        <p>some rain</p>
+        <div class="temp_range">
+          <p class="maxtemp">22 C</p>
+          <p class="mintemp">19 C</p>
+        </div>
+    </div>
+
+
+    <div class="weathercard">
+      <h2 class="weathercardtitle">Today</h2>
+      <div class="weatherimgcontainer">
+        <img class="weatherimg" src="icons/some_sun.png" alt="imagen no encontrada">
+      </div>
+      <p>some rain</p>
+      <div class="temp_range">
+        <p class="maxtemp">24 C</p>
+        <p class="mintemp">19 C</p>
+      </div>
+    </div>
+
+    <div class="weathercard">
+      <h2 class="weathercardtitle">Today</h2>
+      <div class="weatherimgcontainer">
+        <img class="weatherimg" src="icons/some_rain.png" alt="imagen no encontrada">
+      </div>
+      <p>some rain</p>
+      <div class="temp_range">
+        <p class="maxtemp">20 C</p>
+        <p class="mintemp">14 C</p>
+      </div>
+    </div>
+
+    <div class="weathercard">
+      <h2 class="weathercardtitle">Today</h2>
+      <div class="weatherimgcontainer">
+        <img class="weatherimg" src="icons/some_rain.png" alt="imagen no encontrada">
+      </div>
+      <p>some rain</p>
+      <div class="temp_range">
+        <p class="maxtemp">21 C</p>
+        <p class="mintemp">18 C</p>
+      </div>
+    </div>
+
+    <div class="weathercard">
+      <h2 class="weathercardtitle">Today</h2>
+      <div class="weatherimgcontainer">
+        <img class="weatherimg" src="icons/some_sun.png" alt="imagen no encontrada">
+      </div>
+      <p>some rain</p>
+      <div class="temp_range">
+        <p class="maxtemp">24 C</p>
+        <p class="mintemp">18 C</p>
+      </div>
+    </div>
+
+  </div>
+
+     <div class="popmessage" id="mensajepop">
+        <div class="iconmessage">
+          <img src="icons/cookie.png" alt="imagen no encontrada">
+        </div>
+        <div class="textmessage">
+          <div class="titlemessage">
+            <p>Stop cookie time!</p>
+          </div>
+          <div class="bodymessage">
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+          </div>
+        </div>
+        <div class="messagebutton">
+          <button onclick="cerrarpopmessage()">I accept</button>
+        </div>
+     </div>
+</body>
+</html>

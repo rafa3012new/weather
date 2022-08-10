@@ -1,0 +1,170 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.weatherbar{
+    background-color:skyblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+
+.weatherbar .weatherbar_sec2{
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.citieslist{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.citieslist li{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.citieslist li:hover{
+    cursor: pointer;
+}
+
+.titulo{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 3px black;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.titulo .sec2{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    height: 35px;
+    width: 400px;
+    align-self: center;
+    line-height: 3px;
+}
+
+.carrousel{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    gap:20px;
+    justify-content:center;
+    margin-top: 20px;
+}
+
+.weathercard{
+    width: 140px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+    text-align: center;
+    align-self: center;
+}
+
+.weatherimgcontainer{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.weatherimg{
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.temp_range{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.maxtemp, .mintemp{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.maxtemp{color:red;}
+
+.mintemp{color: blue;}
+
+.popmessage{
+    border: solid 1px black;
+    width: 43%;
+    height: 20%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color:  #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto 0;
+}
+
+.iconmessage{
+    align-self: center;
+    padding: 10px 20px;
+}
+
+.textmessage{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 70%;
+    gap: 10px;
+}
+
+.textmessage *{
+    margin: 0;
+}
+
+.titlemessage{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.bodymessage{
+    font-weight:normal;
+    font-size: 0.8em;
+}
+
+.messagebutton{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.messagebutton button  {
+    align-self: center;
+    background-color: skyblue;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: bold;
+    width: 80px;
+    height: 25px;
+}
+
+.messagebutton button:hover{
+    cursor: pointer;
+}
+
